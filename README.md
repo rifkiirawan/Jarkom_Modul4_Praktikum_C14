@@ -428,7 +428,7 @@ route add -net 192.168.20.0 netmask 255.255.252.0 gw 192.168.12.2
 route add -net 192.168.0.0 netmask 255.255.240.0 gw 192.168.0.14
 route add -net 10.151.77.124 netmask 255.255.255.252 gw 192.168.0.14
 ```
-  *KEDIRI
+  * KEDIRI
 ```
 route add -net 10.151.77.124 netmask 255.255.255.252 gw 10.151.77.126
 route add -net 192.168.0.0 netmask 255.255.248.0 gw 192.168.1.2
