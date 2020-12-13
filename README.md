@@ -270,8 +270,8 @@ iface eth1 inet static
 address 192.168.16.1
 netmask 255.255.252.0
 ```
-*Server
-  *MOJOKERTO
+* Server
+  * MOJOKERTO
 ```
 auto lo
 iface lo inet loopback
@@ -282,7 +282,7 @@ address 10.151.77.122
 netmask 255.255.255.252
 gateway 10.151.77.121
 ```
-  *MALANG
+  * MALANG
 ```
 auto lo
 iface lo inet loopback
@@ -293,8 +293,8 @@ address 10.151.77.126
 netmask 255.255.255.252
 gateway 10.151.77.125
 ```
-*Client
-  *SAMPANG
+* Client
+  * SAMPANG
 ```
 auto lo
 iface lo inet loopback
@@ -305,7 +305,7 @@ address 192.168.4.2
 netmask 255.255.252.0
 gateway 192.168.4.1
 ```
-  *SIDOARJO
+  * SIDOARJO
 ```
 auto lo
 iface lo inet loopback
@@ -316,7 +316,7 @@ address 192.168.8.2
 netmask 255.255.252.0
 gateway 192.168.8.1
 ```
-  *BANYUWANGI
+  * BANYUWANGI
 ```
 auto lo
 iface lo inet loopback
@@ -327,7 +327,7 @@ address 192.168.32.1
 netmask 255.255.248.0
 gateway 192.168.24.1
 ```
-  *JEMBER
+  * JEMBER
 ```
 auto lo
 iface lo inet loopback
@@ -338,7 +338,7 @@ address 192.168.28.1
 netmask 255.255.248.0
 gateway 192.168.24.1
 ```
-  *BONDOWOSO
+  * BONDOWOSO
 ```
 auto lo
 iface lo inet loopback
@@ -349,7 +349,7 @@ address 192.168.0.130
 netmask 255.255.255.128
 gateway 192.168.0.129
 ```
-  *JOMBANG
+  * JOMBANG
 ```
 auto lo
 iface lo inet loopback
@@ -360,7 +360,7 @@ address 192.168.2.2
 netmask 255.255.254.0
 gateway 192.168.2.1
 ```
-  *BOJONEGORO
+  * BOJONEGORO
 ```
 auto lo
 iface lo inet loopback
@@ -371,7 +371,7 @@ address 192.168.0.18
 netmask 255.255.255.240
 gateway 192.168.0.17
 ```
-  *NGANJUK
+  * NGANJUK
 ```
 auto lo
 iface lo inet loopback
@@ -382,7 +382,7 @@ address 192.168.12.2
 netmask 255.255.252.0
 gateway 192.168.12.1
 ```
-  *LUMAJANG
+  * LUMAJANG
 ```
 auto lo
 iface lo inet loopback
@@ -393,7 +393,7 @@ address 192.168.1.2
 netmask 255.255.255.0
 gateway 192.168.1.1
 ```
-  *TULUNGAGUNG
+  * TULUNGAGUNG
 ```
 auto lo
 iface lo inet loopback
@@ -407,7 +407,7 @@ gateway 192.168.16.1
 ```iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16``` pada SURABAYA Agar UML dapat mengakses internet
 Pada 4 router yaitu SURABAYA, PASURUAN, BATU, dan KEDIRI ditambahkan route baru (pada router lain tidak perlu, karena route 0.0.0.0/0 Secara otomatis di-setting pada UML).
 Pada 4 router diatas ditambahkan route baru dan disimpan pada file route.sh ```nano route.sh```
-  *SURABAYA
+  * SURABAYA
 ```
 route add -net 192.168.128.0 netmask 255.255.128.0 gw 192.168.0.2
 route add -net 192.168.0.0 netmask 255.255.192.0 gw 192.168.0.10
@@ -415,12 +415,12 @@ route add -net 192.168.64.0 netmask 255.255.252.0 gw 192.168.4.2
 route add -net 10.151.77.120 netmask 255.255.255.252 gw 10.151.77.122
 route add -net 10.151.77.124 netmask 255.255.255.252 gw 192.168.0.10
 ```
-  *PASURUAN
+  * PASURUAN
 ```
 route add -net 192.168.128.0 netmask 255.255.224.0 gw 192.168.0.6
 route add -net 192.168.160.0 netmask 255.255.252.0 gw 192.168.8.2
 ```
-  *BATU
+  * BATU
 ```
 route add -net 192.168.16.0 netmask 255.255.252.0 gw 192.168.2.2
 route add -net 192.168.16.0 netmask 255.255.252.0 gw 192.168.2.3
